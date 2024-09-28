@@ -1,15 +1,20 @@
-# avd_basics
+# Flutter Quiz App
 
-A new Flutter project.
+## Description
+A quiz app built with Flutter to test knowledge on various topics.
 
-## Getting Started
+## Features
+- Multiple-choice questions
+- Scoring system
+- User-friendly interface
+
+## Installation
+To run this app, clone the repo and run:
+```bash
+flutter run
+```
 
 This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
