@@ -19,6 +19,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
               currentQuestion.text,
@@ -28,22 +29,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               ),
             ),
             const SizedBox(height: 30),
-            AnswerButton(
-              answertext: currentQuestion.answers[0],
-              onTap: () {},
-            ),
-            AnswerButton(
-              answertext: currentQuestion.answers[1],
-              onTap: () {},
-            ),
-            AnswerButton(
-              answertext: currentQuestion.answers[2],
-              onTap: () {},
-            ),
-            AnswerButton(
-              answertext: currentQuestion.answers[3],
-              onTap: () {},
-            ),
+            ...currentQuestion.answers.map((answer) {
+              return AnswerButton(answertext: answer, onTap: () {});
+            })
           ],
         ),
       ),
